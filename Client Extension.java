@@ -4,10 +4,9 @@ import java.util.*;
 import java.io.*;
 
 public class Client {
-    // TODO: Change this line once you've implemented a cipher!
+    // Change this line once Ciphers are implemented
     public static final Cipher CHOSEN_CIPHER = null;
 
-    // (we also encourage you to change Cipher.MIN_CHAR and Cipher.MAX_CHAR when testing!)
     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner(System.in);
         System.out.println("Welcome to the cryptography application!");
