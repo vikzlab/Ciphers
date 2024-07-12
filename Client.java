@@ -10,7 +10,7 @@ public class Client {
     // (we also encourage you to change Cipher.MIN_CHAR and Cipher.MAX_CHAR when testing!)
     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner(System.in);
-        System.out.println("Welcome to the CSE 123 cryptography application!");
+        System.out.println("Welcome to the cryptography application!");
         System.out.println("What would you like to do?");
         int chosen = -1;
         do {
