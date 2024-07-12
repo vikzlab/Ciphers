@@ -5,15 +5,18 @@ import java.io.*;
 
 public class Client {
     // Change this line once Ciphers are implemented
-    public static final Cipher CHOSEN_CIPHER = null;
+    public static final Cipher CHOSEN_CIPHER = new CaesarKey("123");
+    // public static final Cipher CHOSEN_CIPHER = new MultiCipher(List.of(
+    //     new CaesarShift(4), new CaesarKey("123"),
+    //     new CaesarShift(100)));
 
-    public static void main(String[] args) throws FileNotFoundException {
+     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner(System.in);
         System.out.println("Welcome to the cryptography application!");
         System.out.println("What would you like to do?");
         int chosen = -1;
         do {
-            System.out.println();
+            System.out.println();21
             System.out.println("(1) Encode / (2) Decode a string");
             System.out.println("(3) Encode / (4) Decode a file");
             System.out.println("(5) Quit");
@@ -44,3 +47,4 @@ public class Client {
         } while (chosen != 5);
     }
 }
+
